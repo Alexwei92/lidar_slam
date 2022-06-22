@@ -1,4 +1,4 @@
-## Lidar-Inertial_SLAM
+## Lidar-Inertial SLAM
 
 
 ## 1. Prerequisites
