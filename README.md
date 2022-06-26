@@ -11,8 +11,10 @@ The code may work in an newer version of ubuntu and ROS but not tested.
 
 2. Refer to the corresponding [README.md](https://github.com/Livox-SDK/Livox-SDK/blob/master/README.md) document to install and run Livox-SDK;
 
-### 1.3. pcl_ros
-sudo apt install ros-$(ROS_VERSION)-pcl-ros
+### 1.3. ROS dependencies
+```
+sudo apt install ros-$(ROS_VERSION)-pcl-ros ros-$(ROS_VERSION)-velodyne
+```
 
 ## 2. Build
 To build, run the following commands:
@@ -25,7 +27,7 @@ catkin_make
 source devel/setup.bash
 ```
 ## Known Issues
-If catkin_make does not compile, please add the following line to the **FAST_LIO** CMakeLists.txt
+If catkin_make does not compile, please add following line to the **FAST_LIO** CMakeLists.txt
 ```
 add_dependencies(fastlio_mapping fast_lio_generate_messages_cpp)
 ```
