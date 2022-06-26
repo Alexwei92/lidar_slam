@@ -18,9 +18,14 @@ sudo apt install ros-$(ROS_VERSION)-pcl-ros
 To build, run the following commands:
 ```
 git clone https://github.com/Alexwei92/lidar_slam.git
-cd lidar_slam
+cd lidar_slam/src
 git submodule update --init --recursive
-cd ../..
+cd ..
 catkin_make
 source devel/setup.bash
+```
+## Known Issues
+If catkin_make does not compile, please add the following line to the **FAST_LIO** CMakeLists.txt
+```
+add_dependencies(fastlio_mapping fast_lio_generate_messages_cpp)
 ```
