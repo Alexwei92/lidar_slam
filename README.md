@@ -26,8 +26,20 @@ cd ..
 catkin_make
 source devel/setup.bash
 ```
+
 ## Known Issues
-If catkin_make does not compile, please add following line to the **FAST_LIO** CMakeLists.txt
+
+1. If `catkin_make` does not compile, please add following line to the **FAST_LIO** [CMakeLists.txt](src/FAST_LIO/CMakeLists.txt)
 ```
 add_dependencies(fastlio_mapping fast_lio_generate_messages_cpp)
+```
+
+2. For some reason, the compilation will fail on TX2 with `gcc` and `g++`. [Solution] Please use `clang` to compile.
+```
+# install clang-9 and clang++-9
+sudo apt update
+sudo apt -y install clang-9 clang++-9
+
+# build with clang
+catkin_make -DCMAKE_C_COMPILER=/usr/bin/clang-9 -DCMAKE_CXX_COMPILER=/usr/bin/clang++-9
 ```
