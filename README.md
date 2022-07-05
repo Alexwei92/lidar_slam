@@ -13,7 +13,9 @@ The code may work in an newer version of ubuntu and ROS but not tested.
 
 ### 1.3. ROS dependencies
 ```
-sudo apt install ros-$(ROS_VERSION)-pcl-ros ros-$(ROS_VERSION)-velodyne
+sudo apt install ros-$(ROS_VERSION)-pcl-ros 
+sudo apt install ros-$(ROS_VERSION)-velodyne
+sudo apt install ros-$(ROS_VERSION)-usb-cam
 ```
 
 ## 2. Build
