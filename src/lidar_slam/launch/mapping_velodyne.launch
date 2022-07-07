@@ -28,7 +28,7 @@
 
     <!-- Rviz -->
     <group if="$(arg rviz)">
-      <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d $(find lidar_slam)/rviz_cfg/loam_velodyne.rviz" />
+      <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d $(find lidar_slam)/rviz/loam_velodyne.rviz" />
     </group>
 
 </launch>
