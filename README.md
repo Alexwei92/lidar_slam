@@ -2,7 +2,7 @@
 
 
 ## 1. Prerequisites
-### 1.1. **Ubuntu 18.04** and **ROS Noetic**
+### 1.1. **Ubuntu 18.04** and **ROS Melodic**
 The code may work in an newer version of ubuntu and ROS but not tested.
 
 ### 1.2. Livox-SDK Installation
