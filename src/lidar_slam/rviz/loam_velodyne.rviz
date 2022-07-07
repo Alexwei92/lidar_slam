@@ -14,6 +14,7 @@ Panels:
         - /Odometry1/Odometry1/Covariance1
         - /Odometry1/Odometry1/Covariance1/Position1
         - /Odometry1/Odometry1/Covariance1/Orientation1
+        - /Path1
         - /MarkerArray1/Namespaces1
       Splitter Ratio: 0.6432291865348816
     Tree Height: 777
@@ -215,7 +216,7 @@ Visualization Manager:
       Head Length: 0
       Length: 0.30000001192092896
       Line Style: Billboards
-      Line Width: 0.20000000298023224
+      Line Width: 0.10000000149011612
       Name: Path
       Offset:
         X: 0
@@ -324,7 +325,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 52.794620513916016
+      Distance: 46.94915008544922
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -340,9 +341,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.5997971296310425
+      Pitch: 0.8047969341278076
       Target Frame: body
-      Yaw: 3.0782737731933594
+      Yaw: 2.9832746982574463
     Saved: ~
 Window Geometry:
   Displays:
