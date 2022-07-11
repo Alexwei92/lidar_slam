@@ -12,7 +12,7 @@ The code may work in an newer version of ubuntu and ROS but not tested.
 2. Refer to the corresponding [README.md](https://github.com/Livox-SDK/Livox-SDK/blob/master/README.md) document to install and run Livox-SDK;
 
 ### 1.3. ROS dependencies
-```
+```bash
 sudo apt install ros-$(ROS_VERSION)-pcl-ros 
 sudo apt install ros-$(ROS_VERSION)-velodyne
 sudo apt install ros-$(ROS_VERSION)-usb-cam
@@ -20,7 +20,7 @@ sudo apt install ros-$(ROS_VERSION)-usb-cam
 
 ## 2. Build
 To build, run the following commands:
-```
+```bash
 git clone https://github.com/Alexwei92/lidar_slam.git
 cd lidar_slam/src
 git submodule update --init --recursive
@@ -32,12 +32,12 @@ source devel/setup.bash
 ## Known Issues
 
 1. If `catkin_make` does not compile, please add following line to the [CMakeLists.txt](src/FAST_LIO/CMakeLists.txt) in FAST_LIO folder.
-```
+```bash
 add_dependencies(fastlio_mapping fast_lio_generate_messages_cpp)
 ```
 
 2. For some reason, the compilation will fail on TX2 with `gcc` and `g++`. [**Solution**] Please use `clang` to compile.
-```
+```bash
 # install clang-9 and clang++-9
 sudo apt update
 sudo apt -y install clang-9 clang++-9
